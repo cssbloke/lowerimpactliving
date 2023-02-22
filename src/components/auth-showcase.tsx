@@ -26,11 +26,11 @@ export const AuthShowcase: React.FC = () => {
   return (
     <>
       <button
-        className="px-3 py-2 mr-4 bg-primary3 rounded-lg border-2 border-white text-white hover:bg-dark-blue/50 hover:text-white ease-in-out duration-200"
+        className="px-3 py-2 bg-primary3 rounded-lg border-2 border-white text-white hover:bg-dark-blue/50 hover:text-white ease-in-out duration-200"
         onClick={() => void signIn("cognito")}
       >
-        <UserIcon className="h-6 w-6 text-white inline-block mr-2" />
-        Sign in / Register
+        <UserIcon className="h-6 w-6 text-white inline-block" />
+        <span className="hidden md:inline-block ml-2">Sign in / Register</span>
       </button>
     </>
   );
